@@ -8,11 +8,19 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div id="app">
-    <h1>Chess</h1>
-    <div id="board"></div>
-    <div id="status"></div>
-    <button id="newGameBtn">New Game</button>
+  <h1>Chess</h1>
+  <div class="game-wrapper">
+    <div class="board-column">
+      <div id="black-captures" class="captured-pieces"></div>
+      <div id="board"></div>
+      <div id="white-captures" class="captured-pieces"></div>
+      <div id="status"></div>
+      <button id="newGameBtn">New Game</button>
+    </div>
+    <aside class="side-panel">
+      <h2>Move History</h2>
+      <div id="move-history"></div>
+    </aside>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
